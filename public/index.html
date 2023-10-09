@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Riddles</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h2>Let's go Riddles</h2>
+
+  <button id="loadRiddle">Load Riddle</button>
+
+  <div id="loadedRiddle">
+    <p id="loadedQuestion"></p>
+    <p id="loadedAnswer"></p>
+  </div>
+  
+  <form id="createEnigmeForm">
+    <label for="question">Riddle:</label>
+    <input type="text" id="question" name="question" required>
+    <label for="answerInput">Answer:</label>
+    <input type="text" id="answerInput" name="answerInput" required>
+    <button type="button" id="createEnigmeButton">Create Riddle</button>
+  </form>
+
+  <form id="updateRiddleForm">
+    <label for="updateId">Riddle ID:</label>
+    <input type="text" id="updateId" name="updateId" required>
+    <label for="updateQuestion">New Riddle:</label>
+    <input type="text" id="updateQuestion" name="updateQuestion" required>
+    <label for="updateAnswer">New Answer:</label>
+    <input type="text" id="updateAnswer" name="updateAnswer" required>
+    <button type="submit">Update Riddle</button>
+  </form>
+
+  <form id="deleteRiddleForm">
+    <label for="deleteId">Riddle ID:</label>
+    <input type="text" id="deleteId" name="deleteId" required>
+    <button type="submit">Riddle Enigme</button>
+  </form>
+  </form>
+
+  <script src="/public/createEnigme.js"></script>
+  <script src="/public/readEnigmes.js"></script>
+  <script src="/public/updateEnigme.js"></script>
+  <script src="/public/deleteEnigme.js"></script>
+</body>
+</html>
